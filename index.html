@@ -10,7 +10,6 @@
     <body>
         <ul class="portfolio">
             {% for repo in site.github.public_repositories limit:28 %}
-         
                 {% if repo.fork != true %}
                     <li class="repo repo--{{ repo.language | downcase }}">
                         <svg class="icon">
@@ -24,7 +23,6 @@
                         </aside>
                     </li>
                 {% endif %}
-         
             {% endfor %}
         </ul>
     </body>
