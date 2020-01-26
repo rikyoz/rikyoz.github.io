@@ -156,6 +156,26 @@ h3 {
             color: #617CBE;
         }
     }
+    &--c++ {
+        background: fade-out(#f34b7d, 0.9);
+        .icon {
+            fill: #f34b7d;
+            background: transparent;
+        }
+        a {
+            color: #f34b7d;
+        }
+    }
+    &--python {
+        background: fade-out(#3572A5, 0.9);
+        .icon {
+            fill: #3572A5;
+            background: transparent;
+        }
+        a {
+            color: #3572A5;
+        }
+    }
     &--liquid {
         background: fade-out(#95BE46, 0.9);
         .icon {
