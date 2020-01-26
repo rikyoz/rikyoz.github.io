@@ -16,7 +16,7 @@
             <h2>{{ page.description }}</h2>
         </header>
         <ul class="portfolio">
-            {% for repo in site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+            {% for repo in (site.github.public_repositories | sort: 'stargazers_count' | reverse) %}
             {% if repo.fork != true %}
                 <li class="repo {{ repo.language | downcase }}">
                     <svg class="icon">
