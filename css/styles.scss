@@ -156,6 +156,16 @@ h3 {
             color: #617CBE;
         }
     }
+    &--c {
+        background: fade-out(#555555, 0.9);
+        .icon {
+            fill: #555555;
+            background: transparent;
+        }
+        a {
+            color: #555555;
+        }
+    }
     &--c\+\+ {
         background: fade-out(#f34b7d, 0.9);
         .icon {
