@@ -1,0 +1,1 @@
+# rikyoz.github.io repository
