@@ -1,0 +1,52 @@
+---
+# Styles
+---
+body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.portfolio {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    &:hover {
+        .repo {
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.repo {
+    position: relative;
+    display: block;
+    width: 32.33%;
+    margin: .5%;
+    padding: 30px 30px;
+    background: #f4f4f4;
+    transition: .2s;
+    @media (max-width: 960px) {
+        width: 49%;
+    }
+    &:nth-of-type(3n) {
+        border-right: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+}
