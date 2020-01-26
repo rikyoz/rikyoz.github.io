@@ -19,7 +19,7 @@
             {% assign sorted = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
             {% for repo in sorted %}
             {% if repo.fork != true %}
-                <li class="repo {{ repo.language | downcase | replace "++", "pp" }}">
+                <li class="repo {{ repo.language | downcase | replace '++', 'pp' }}">
                     <svg class="icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ repo.language | downcase | replace "++", "pp" }}"></use>
                     </svg>
