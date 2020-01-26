@@ -116,7 +116,7 @@ h3 {
     > .icon {
         background: transparent;
     }
-    &-html {
+    &.html {
         background: fade-out(#F16529, 0.9);
         .icon {
             fill: #F16529;
@@ -126,7 +126,7 @@ h3 {
             color: #F16529;
         }
     }
-    &-css {
+    &.css {
         background: fade-out(#29A9DF, 0.9);
         .icon {
             fill: #29A9DF;
@@ -136,7 +136,7 @@ h3 {
             color: #29A9DF;
         }
     }
-    &-javascript {
+    &.javascript {
         background: fade-out(#E8C917, 0.9);
         .icon {
             fill: #E8C917;
@@ -146,7 +146,7 @@ h3 {
             color: #E8C917;
         }
     }
-    &-php {
+    &.php {
         background: fade-out(#617CBE, 0.9);
         .icon {
             fill: #617CBE;
@@ -156,7 +156,7 @@ h3 {
             color: #617CBE;
         }
     }
-    &-c {
+    &.c {
         background: fade-out(#555555, 0.9);
         .icon {
             fill: #555555;
@@ -166,7 +166,7 @@ h3 {
             color: #555555;
         }
     }
-    &-c\+\+ {
+    &.c\+\+ {
         background: fade-out(#f34b7d, 0.9);
         .icon {
             fill: #f34b7d;
@@ -176,7 +176,7 @@ h3 {
             color: #f34b7d;
         }
     }
-    &-python {
+    &.python {
         background: fade-out(#3572A5, 0.9);
         .icon {
             fill: #3572A5;
@@ -186,7 +186,7 @@ h3 {
             color: #3572A5;
         }
     }
-    &-liquid {
+    &.liquid {
         background: fade-out(#95BE46, 0.9);
         .icon {
             fill: #95BE46;
