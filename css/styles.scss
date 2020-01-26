@@ -116,6 +116,9 @@ h3 {
     > .icon {
         background: transparent;
     }
+    > span {
+        text-align: center;
+    }
     &.html {
         background: fade-out(#F16529, 0.9);
         .icon {
