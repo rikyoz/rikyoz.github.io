@@ -4,10 +4,17 @@
 <!doctype html>
 <html lang="en-US">
     <head>
-        <title>rikyoz</title>
+        <title>{{ page.title }}</title>
         <link href="./css/styles.css" media="all" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        {% include icons.svg %}
+        <header class="header">
+          <h1>{{ page.title }}</h1>
+          <h2>{{ page.description }}</h2>
+        </header>
         <ul class="portfolio">
             {% for repo in site.github.public_repositories limit:28 %}
                 {% if repo.fork != true %}
