@@ -37,12 +37,14 @@ social_media:
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: C++
+    web_url: https://github.com/topics/cplusplus
+    image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/c++.svg
 
-  - name: Web design
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/python.svg
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Cyber Security
+    web_url: https://github.com/topics/security
+    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/shield.svg
