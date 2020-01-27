@@ -97,7 +97,7 @@
         z-index: 100;
     }
     .language {
-        background-color: $color;
+        color: $color;
     }
     .icon {
         fill: $color;
@@ -130,12 +130,6 @@
     }
     .language {
         //filter: brightness(125%) !important;
-        border-radius: 50%;
-        display: inline-block;
-        height: 12px;
-        position: relative;
-        top: 3px;
-        width: 12px;
     }
     &.html {
         @include repo-color(#F16529, "\e7f7");
