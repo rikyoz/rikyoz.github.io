@@ -3,13 +3,13 @@
                         <div>
                             <div class="d-flex flex-justify-between flex-items-start mb-1">
                             <h1 class="f4 lh-condensed mb-1">
-                                <a href="{{ repository.html_url }}">
+                                <a href="{{ repository.html_url }}" itemprop="name">
                                     {% octicon repo height:20 class:"mr-1 v-align-middle icon" fill:"#586069" aria-label:repo %}
                                     {{ repository.name }}
                                 </a>
                             </h1>
                             </div>
-                            <div class="mb-2 ws-normal">{{ repository.description }}</div>
+                            <div class="mb-2 ws-normal" itemprop="description">{{ repository.description }}</div>
                         </div>
                         <div class="d-flex f6">
                             {%- if repository.language %}
