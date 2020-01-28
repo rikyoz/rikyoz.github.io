@@ -3,7 +3,7 @@
 {%- else %}
     {%- assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {%- endif %}
-                <img src="{{ user.avatar_url }}" class="CircleBadge CircleBadge--large mx-auto CircleBadge-icon" style="padding: 6px">
+                <img src="{{ user.avatar_url }}" class="CircleBadge CircleBadge--large mx-auto CircleBadge-icon" style="padding: 6px" alt="{{ user.name }}'s Avatar">
                 <h1 class="text-white mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
                 <p class="mb-3 f4 text-white">{{- user.bio | strip_newlines -}}</p>
 {%- if include.metadata %}

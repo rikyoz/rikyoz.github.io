@@ -2,8 +2,9 @@ layout: stacked
 style: light
 
 plugins:
-  - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-octicons
+  - jekyll-sitemap
   - jekyll-tidy
   - jemoji
 
