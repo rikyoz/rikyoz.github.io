@@ -3,22 +3,22 @@
         <header class="header p-responsive text-center">
         {%- include masthead.html metadata=true %}
         </header>
-        <div class="container-lg py-6 p-responsive text-center">
+        <div class="container-lg py-3 p-responsive text-center">
             {%- if content != blank %}
             <div{% if site.style == 'dark' %} class="text-white"{% endif %}>
                 {{ content }}
             </div>
             {%- endif %}
-            <div class="mb-6 projects">
+            <div class="mb-3 projects">
                 {%- include projects.html %}
             </div>
             {%- if site.topics %}
-            <div class="mb-6">
+            <div class="mb-3">
                 {%- include interests.html %}
             </div>
             {%- endif %}
             {%- unless posts_total == 0 %}
-            <div class="mb-6">
+            <div class="mb-3">
                 {%- include thoughts.html %}
             </div>
             {%- endunless %}
