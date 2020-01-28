@@ -1,5 +1,5 @@
 {%- if site.layout == 'stacked' %}
-    {%- assign metadata_styles = 'd-md-inline-block mx-1 mb-1 mb-md-0' %}
+    {%- assign metadata_styles = 'd-md-inline-block mx-2 mb-1 mb-md-0' %}
 {%- else %}
     {%- assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {%- endif %}
@@ -9,26 +9,21 @@
 {%- if include.metadata %}
                 {%- if user.location %}
                 <div class="{{ metadata_styles }} text-white">
-                    {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
+                    {% octicon location height:20 class:"v-align-middle" fill:{{ icon_color }} aria-label:Location %}
                     {{ user.location }}
                 </div>
                 {%- endif %}
                 <div class="f4 my-3">
                     {%- if user.name %}
-                    <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }}" aria-label:GitHub>
-                        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
+                    <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }} v-align-middle" aria-label:GitHub>
+                        {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub %}
                     </a>
                     {%- endif -%}
-                    {%- if user.email %}
-                    <a href="mailto:{{ user.email }}" class="{{ metadata_styles }}">
-                        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-                    </a>
-                    {%- endif %}
                     {%- if site.social_media -%}
                     {%- for account in site.social_media -%}
                     {%- assign service_shortname = account[0] -%}
                     {%- assign service = site.data.social_media[service_shortname] %}
-                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{{ metadata_styles }} mr-2 v-align-middle" aria-label="{{ service.name }}: {{ account[1] }}">
+                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{{ metadata_styles }} v-align-middle" aria-label="{{ service.name }}: {{ account[1] }}">
                         {{ service.icon_svg }}
                         <span class="d-none">{{- service.name }}</span>
                     </a>
