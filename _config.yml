@@ -1,6 +1,7 @@
 layout: stacked
 style: light
 
+url: "https://rikyoz.github.io/"
 plugins:
   - jekyll-github-metadata
   - jekyll-octicons
