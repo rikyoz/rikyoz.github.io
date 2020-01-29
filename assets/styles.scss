@@ -13,13 +13,16 @@ header {
         box-shadow: 1px 1px 10px rgba(242, 247, 252, 0.5);
     }
 
-    .socials a svg {
+    a svg {
         opacity: 0.5;
+        transition: opacity ease-in 250ms;
+        -webkit-transition: opacity ease-in 250ms;
         vertical-align: text-bottom;
 
         &:hover {
             opacity: 1.0;
-            transition: ease-in;
+            transition: opacity ease-in 250ms;
+            -webkit-transition: opacity ease-in 250ms;
         }
     }
 
@@ -40,7 +43,8 @@ header {
         background-image: url("../assets/headerbg4.png");
         background-repeat: no-repeat;
         background-position: center;
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
     }
 }
 
@@ -181,6 +185,7 @@ body {
     background-clip: border-box;
     border-style: solid;
     border-width: 1px;
+    -webkit-transition: .2s;
     transition: .2s;
     a {
         //filter: brightness(125%) !important;
