@@ -48,7 +48,7 @@ header {
         filter: blur(2px) brightness(65%);
         -webkit-filter: blur(2px) brightness(65%);
         background-color: #273136;
-        background-image: url("../assets/headerbg4.png");
+        background-image: url("../assets/headerbg4.webp");
         background-repeat: no-repeat;
         background-position: center;
         -webkit-transform: scale(1.1);
@@ -153,6 +153,7 @@ body {
         url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.svg?-hdf3wh#devicon') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
 }
 
 @mixin repo-color($color, $icon) {
