@@ -1,6 +1,6 @@
 {%- include header.html %}
 {%- if site.layout == 'stacked' %}
-        <header class="header p-responsive text-center">
+        <header class="header p-responsive text-center pt-3">
         {%- include masthead.html metadata=true %}
         </header>
         <div class="container-lg py-3 p-responsive text-center">
@@ -9,16 +9,19 @@
                 {{ content }}
             </div>
             {%- endif %}
-            <div class="mb-3 projects">
+            <div class="mb-2 projects">
                 {%- include projects.html %}
             </div>
+            <div class="mb-2 skills">
+                {%- include skills.html %}
+            </div>
             {%- if site.topics %}
-            <div class="mb-3">
+            <div class="mb-2">
                 {%- include interests.html %}
             </div>
             {%- endif %}
             {%- unless posts_total == 0 %}
-            <div class="mb-3">
+            <div class="mb-2">
                 {%- include thoughts.html %}
             </div>
             {%- endunless %}

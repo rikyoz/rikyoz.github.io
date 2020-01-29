@@ -3,9 +3,23 @@
 {%- else %}
     {%- assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {%- endif %}
-                <img src="{{ user.avatar_url }}" class="CircleBadge CircleBadge--large mx-auto CircleBadge-icon" style="padding: 6px" alt="{{ user.name }}'s Avatar">
-                <h1 class="text-white mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
-                <p class="mb-3 f4 text-white">{{- user.bio | strip_newlines -}}</p>
+                <img src="{{ user.avatar_url }}" class="mb-2 CircleBadge CircleBadge--large mx-auto CircleBadge-icon" style="padding: 6px" alt="{{ user.name }}'s Avatar">
+                <h1 class="text-white mb-2 lh-condensed">
+                {%- if site.title -%}
+                {{ site.title }}
+                {%- else if user.name -%}
+                {{ user.name }}
+                {%- else -%}
+                {{ user.login }}
+                {%- endif -%}
+                </h1>
+                <p class="mb-3 f4 text-white">
+                {%- if site.description -%}
+                {{- site.description | strip_newlines -}}
+                {%- else -%}
+                {{- user.bio | strip_newlines -}}
+                {%- endif -%}
+                </p>
 {%- if include.metadata %}
                 {%- if user.location %}
                 <div class="{{ metadata_styles }} text-white">
@@ -13,9 +27,9 @@
                     {{ user.location }}
                 </div>
                 {%- endif %}
-                <div class="f4 my-3">
+                <div class="socials f4 my-3">
                     {%- if user.name %}
-                    <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }} v-align-middle" aria-label:GitHub>
+                    <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }} v-align-middle" aria-label="GitHub" title="GitHub">
                         {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub %}
                     </a>
                     {%- endif -%}
@@ -23,9 +37,8 @@
                     {%- for account in site.social_media -%}
                     {%- assign service_shortname = account[0] -%}
                     {%- assign service = site.data.social_media[service_shortname] %}
-                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{{ metadata_styles }} v-align-middle" aria-label="{{ service.name }}: {{ account[1] }}">
+                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{{ metadata_styles }} v-align-middle" aria-label="{{ service.name }}" target="_blank" title="{{ service.name }}">
                         {{ service.icon_svg }}
-                        <span class="d-none">{{- service.name }}</span>
                     </a>
                     {%- endfor -%}
                     {%- endif -%}

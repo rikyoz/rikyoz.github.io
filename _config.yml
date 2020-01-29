@@ -1,5 +1,7 @@
 layout: stacked
 style: light
+title: Riccardo Ostani
+description: Software Developer 💻
 
 url: "https://rikyoz.github.io/"
 plugins:
@@ -28,15 +30,14 @@ projects:
     projects: p7zip
 
 social_media:
-  email: BBNN
+  linkedin: ostaniriccardo
+  twitter: rikyoz92
   # facebook: your_username
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  linkedin: ostaniriccardo
   # stackoverflow: your_user_id
   # telegram: your_username
-  # twitter: rikyoz92
   # website: http://your_website_url
   # youtube: your_username
 

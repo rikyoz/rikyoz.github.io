@@ -6,7 +6,11 @@
     {%- assign page_title = page.title %}
     {%- assign meta_description = page.content | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {%- else %}
-    {%- assign page_title = user.name %}
+    {%- if site.title -%}
+        {%- assign page_title = site.title %}
+    {%- else -%}
+        {%- assign page_title = user.name %}
+    {% endif %}
     {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {%- endif -%}
 <!doctype html>
@@ -15,7 +19,7 @@
         <meta charset="utf-8">
         <title>{{ page_title }}</title>
         <meta name="description" content="{{ meta_description }}" />
-        <meta property="og:title" content="{{ user.name }}" />
+        <meta property="og:title" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}" />
         <meta property="og:image" content="{{ user.avatar_url }}" />
         <meta property="og:image:width" content="460" />
         <meta property="og:image:height" content="460" />
@@ -24,7 +28,8 @@
         <meta property="og:url" content="{{ site.url }}" />
         <meta name="theme-color" content="#24292e">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="//fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link href="/favicon.ico" rel="icon" type="image/x-icon">
     </head>
     <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
