@@ -13,16 +13,24 @@ header {
         box-shadow: 1px 1px 10px rgba(242, 247, 252, 0.5);
     }
 
-    a svg {
-        opacity: 0.5;
-        transition: opacity ease-in 250ms;
-        -webkit-transition: opacity ease-in 250ms;
-        vertical-align: text-bottom;
+    a {
+        text-decoration: none;
 
         &:hover {
-            opacity: 1.0;
+            text-decoration: none;
+        }
+
+        svg {
+            opacity: 0.5;
             transition: opacity ease-in 250ms;
             -webkit-transition: opacity ease-in 250ms;
+            vertical-align: text-bottom;
+
+            &:hover {
+                opacity: 1.0;
+                transition: opacity ease-in 250ms;
+                -webkit-transition: opacity ease-in 250ms;
+            }
         }
     }
 
@@ -149,7 +157,7 @@ body {
 
 @mixin repo-color($color, $icon) {
     position: relative;
-    color: darken($color, 30%);
+    color: darken($color, 20%);
     text-shadow: 1px 1px 1px white;
     background-color: fade-out($color, 0.9);
     border-color: fade-out($color, 0.5) !important;
@@ -179,14 +187,14 @@ body {
         z-index: 100;
     }
     .language {
-        color: $color;
+        color: darken($color, 20%);
     }
     .icon {
-        fill: $color;
+        fill: darken($color, 20%);
         background: transparent;
     }
     a {
-        color: $color;
+        color: darken($color, 20%);
     }
 }
 
