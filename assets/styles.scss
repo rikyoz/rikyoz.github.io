@@ -142,6 +142,10 @@ body {
     }
 }
 
+.f4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 @font-face {
     font-family: 'devicon';
     src:url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.eot?-hdf3wh');
@@ -157,6 +161,7 @@ body {
 @mixin repo-color($color, $icon) {
     position: relative;
     color: darken($color, 20%);
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 1px 1px 1px white;
     background-color: fade-out($color, 0.9);
     border-color: fade-out($color, 0.5) !important;
