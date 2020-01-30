@@ -13,7 +13,7 @@
                 {{ user.login }}
                 {%- endif -%}
                 </h1>
-                <p class="mb-3 f4 text-white">
+                <p class="mb-3 f3 text-white">
                 {%- if site.description -%}
                 {{- site.description | strip_newlines -}}
                 {%- else -%}
@@ -22,12 +22,12 @@
                 </p>
 {%- if include.metadata %}
                 {%- if user.location %}
-                <div class="{{ metadata_styles }} text-white">
-                    {% octicon location height:20 class:"v-align-middle" fill:{{ icon_color }} aria-label:Location %}
+                <div class="{{ metadata_styles }} f4 text-white">
+                    {% octicon location height:20 fill:{{ icon_color }} aria-label:Location %}
                     {{ user.location }}
                 </div>
                 {%- endif %}
-                <div class="f4 my-3">
+                <div class="f4 mt-3 mb-4">
                     {%- if user.name %}
                     <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }}" rel="nofollow noopener noreferrer" target="_blank" title="GitHub: {{ user.login }}">
                         {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub %}

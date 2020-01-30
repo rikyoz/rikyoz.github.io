@@ -6,11 +6,11 @@
 header {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 2px 0.5em #273136;
-    text-shadow: 1px 1px 10px rgba(242, 247, 252, 0.2);
+    box-shadow: 0 2px 0.5em rgba(39, 48, 53, 0.6);
+    text-shadow: 0 0 10px #000;
 
     .CircleBadge {
-        box-shadow: 1px 1px 10px rgba(242, 247, 252, 0.5);
+        box-shadow: 0 0 10px #000;
     }
 
     a {
@@ -66,13 +66,16 @@ header {
                                     supported by Chrome, Opera and Firefox */
 }
 
+h1 {
+    font-size: 2.4rem;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     overflow: overlay;
 
     &::-webkit-scrollbar {
@@ -91,13 +94,8 @@ body {
 }
 
 .p-responsive h2 {
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
-// If a user adds a custom font, this component will stop it from bleeding into GitHub components:
-/*.github-component {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
-}*/
 
 .emoji {
     width: 18px;
@@ -163,6 +161,7 @@ body {
     background-color: fade-out($color, 0.9);
     border-color: fade-out($color, 0.5) !important;
     overflow: hidden;
+
     &::before {
         content: $icon;
         display: block;
@@ -207,21 +206,16 @@ body {
     -webkit-transition: .2s;
     transition: .2s;
     a {
-        //filter: brightness(125%) !important;
         color: #4078c0;
         text-decoration: none;
     }
     .icon {
-        //filter: brightness(125%) !important;
         background: transparent;
     }
     > span {
         display: block;
         text-align: center;
         width: 100%;
-    }
-    .language {
-        //filter: brightness(125%) !important;
     }
     &.html {
         @include repo-color(#F16529, "\e7f7");
