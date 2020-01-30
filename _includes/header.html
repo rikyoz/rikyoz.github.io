@@ -25,15 +25,26 @@
         <link href="//fonts.googleapis.com/" rel="dns-prefetch" crossorigin>
         <meta charset="utf-8">
         <title>{{ page_title }}</title>
-        <meta name="description" content="{{ meta_description }}" />
+        <meta name="description" content="{{ meta_description }}">
         <meta property="og:title" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}" />
-        <meta property="og:image" content="{{ user.avatar_url }}" />
-        <meta property="og:image:width" content="460" />
-        <meta property="og:image:height" content="460" />
-        <meta property="og:description" content="{{ meta_description }}" />
-        <meta property="og:type" content="profile" />
-        <meta property="og:url" content="{{ site.url }}" />
-        <meta name="theme-color" content="#24292e">
+        <meta property="og:image" content="{{ user.avatar_url }}">
+        <meta property="og:image:width" content="460">
+        <meta property="og:image:height" content="460">
+        <meta property="og:description" content="{{ meta_description }}">
+        <meta property="og:site_name" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="{{ site.url }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ site.url }}">
+        {%- if site.social_media and site.social_media.twitter %}
+        <meta name="twitter:site" content="@{{ site.social_media.twitter }}">
+        <meta name="twitter:creator" content="@{{ site.social_media.twitter }}">
+        {%- endif %}
+        <meta name="twitter:title" content="{{ page_title }}">
+        <meta name="twitter:description" content="{{ meta_description }}">
+        <meta name="twitter:image:src" content="{{ user.avatar_url }}">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="theme-color" content="#24292e" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="//fonts.googleapis.com/css?family=OpenSans&display=swap" rel="stylesheet">
         {%- comment %}
