@@ -42,6 +42,14 @@ social_media:
   # youtube: your_username
 
 topics:
+  - name: Cyber Security
+    web_url: https://github.com/topics/security
+    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/shield.svg
+
+  - name: Software Development
+    web_url: https://github.com/topics/development
+    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/code.svg
+
   - name: C++
     web_url: https://github.com/topics/cplusplus
     image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/c++.svg
@@ -49,7 +57,3 @@ topics:
   - name: Python
     web_url: https://github.com/topics/python
     image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/python.svg
-
-  - name: Cyber Security
-    web_url: https://github.com/topics/security
-    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/shield.svg

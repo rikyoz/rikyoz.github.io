@@ -10,8 +10,13 @@
         {%- assign page_title = site.title %}
     {%- else -%}
         {%- assign page_title = user.name %}
-    {% endif %}
-    {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+    {%- endif %}
+    {%- if site.description -%}
+        {%- assign page_title = page_title | append: " | " | append: site.description %}
+        {%- assign meta_description = site.description | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+    {%- else %}
+        {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+    {%- endif %}
 {%- endif -%}
 <!doctype html>
 <html class="min-height-full" lang="en">
