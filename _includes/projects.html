@@ -1,6 +1,6 @@
 
-                <h2{% if site.style == 'dark' %} class="text-white"{% endif %}>My Projects</h2>
-                <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
+                <h2{% if site.style == 'dark' %} class="text-white"{% endif %}><span>My <strong>Projects</strong></span></h2>
+                <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% endif %}">GitHub repositories that I've built.</p>
                 <div class="d-sm-flex flex-wrap gutter-condensed mb-4 portfolio">
                 {%- if site.projects.sort_by == 'stars' %}
                     {%- assign sort_order = 'stargazers_count', 'last' %}
