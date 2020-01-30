@@ -4,7 +4,7 @@
 //@import 'highlight-syntax';
 
 a {
-    color: rgb(0, 112, 243);
+    color: rgb(2, 136, 209);
 }
 
 header {
@@ -115,7 +115,7 @@ body {
         @include horizontal_line();
 
         span {
-            background:#fff;
+            background-color: #fafbfc;
             padding: 0 10px;
         }
     }
@@ -178,6 +178,7 @@ body {
 
 .f4 {
     font-family: 'Open Sans', sans-serif;
+    font-display: swap;
 }
 
 @font-face {
@@ -196,6 +197,7 @@ body {
     position: relative;
     color: darken($color, 20%);
     font-family: 'Open Sans', sans-serif;
+    font-display: swap;
     text-shadow: 1px 1px 1px white;
     background-color: fade-out($color, 0.9);
     border-color: fade-out($color, 0.5) !important;
