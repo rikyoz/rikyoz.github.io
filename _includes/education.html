@@ -4,10 +4,12 @@
                 <div class="mx-auto timeline">
                 {%- for degree in site.education %}
                     <div class="timeline-item">
-                        <div class="timeline-icon"></div>
+                        <span class="timeline-icon">
+                            {% octicon {{ degree.octicon }} width:16 class:"v-align-middle icon" %}
+                        </span>
                         <div class="timeline-content {% cycle 'left', 'right'%}">
                             <h5 class="degree-type">{{ degree.type }} in</h5>
-                            <h3>{{ degree.title }} {% octicon {{ degree.octicon }} width:24 class:"v-align-middle icon" %}</h3>
+                            <h3>{{ degree.title }}</h3>
                             <h4><span>Thesis:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
                             <h4><span>Final mark:</span> {{ degree.mark }}</h4>
                             <h5><span>Language:</span> {{ degree.language }}</h5>

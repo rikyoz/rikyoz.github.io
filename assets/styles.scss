@@ -404,7 +404,7 @@ $timeline-item-card-radius: 8px;
         @extend %clearfix;
 
         .timeline-icon {
-            $icon-size: 24px;
+            $icon-size: 28px;
             background-color: $theme-color;
             border-radius: 50%;
             width: $icon-size;
@@ -417,9 +417,12 @@ $timeline-item-card-radius: 8px;
             position: absolute;
             color: white;
             text-align: center;
-            line-height: $icon-size;
-            border: 0.20em solid white;
+            border: 0.20rem solid white;
             box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+
+            svg {
+                margin-top: -1px;
+            }
         }
 
         .timeline-content {
