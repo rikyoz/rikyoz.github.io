@@ -134,6 +134,12 @@ body {
     div > .f4 {
         color: $dark-theme-color !important;
     }
+
+    hr {
+        border: 0;
+        height: 1px;
+        @include horizontal_line();
+    }
 }
 
 .emoji {
@@ -427,7 +433,7 @@ $timeline-item-card-radius: 8px;
             }
 
             span {
-                font-size: small;
+                font-weight: normal;
                 opacity: 0.9;
             }
 
@@ -486,7 +492,7 @@ $timeline-item-card-radius: 8px;
             .timeline-content {
                 float: right;
                 text-align: left;
-                width: 94%;
+                width: 90%;
 
                 &::before, &.right::before {
                     border-left: 0;
@@ -502,7 +508,6 @@ $timeline-item-card-radius: 8px;
         }
     }
 }
-
 
 footer {
     @include linear_gradient(top, rgba(0,0,0,0), rgba($theme-color, 0.05));

@@ -4,7 +4,7 @@
                 {%- for category in site.skills %}
                     <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3 mx-auto" itemscope itemtype="https://schema.org/ItemList">
                         <h3>{{ category[0] | capitalize }}</h3>
-                        <ul>
+                        <ul class="noselect">
                             {%- for skill in category[1] %}
                             <li class="f4">
                             {{ skill }}
