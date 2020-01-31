@@ -6,9 +6,7 @@
                         <h3>{{ category[0] | capitalize }}</h3>
                         <ul class="noselect">
                             {%- for skill in category[1] %}
-                            <li class="f4">
-                            {{ skill }}
-                            </li>
+                            <li class="f4">{{ skill }}</li>
                             {%- endfor %}
                         </ul>
                     </div>
