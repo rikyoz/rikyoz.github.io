@@ -8,10 +8,10 @@
                         <div class="timeline-content {% cycle 'left', 'right'%}">
                             <h5 class="degree-type">{{ degree.type }} in</h5>
                             <h3>{{ degree.title }} {% octicon {{ degree.octicon }} width:24 class:"v-align-middle icon" %}</h3>
-                            <h4><span>Thesis title:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
+                            <h4><span>Thesis:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
                             <h4><span>Final mark:</span> {{ degree.mark }}</h4>
                             <h5><span>Language:</span> {{ degree.language }}</h5>
-                            <h5><span>University:</span> {{ degree.where }}</h5>
+                            <h5>{{ degree.where }}</h5>
                             <h5 class="timeline-date">{{ degree.date }}</h5>
                         </div>
                     </div>

@@ -369,7 +369,10 @@ $timeline-item-card-radius: 8px;
     font-display: swap;
 
     &::before {
-        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
+        background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
+        background-image:      -o-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
+        background-image:         linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
         content: '';
         height: 100%;
         left: 50%;
@@ -439,6 +442,7 @@ $timeline-item-card-radius: 8px;
 
             h3 {
                 color: $theme-color;
+                text-shadow: 0 0 5px rgba($theme-color, 0.2);
             }
 
             h5 {
@@ -482,7 +486,7 @@ $timeline-item-card-radius: 8px;
     .timeline {
         margin: 30px;
         padding: 0;
-        width: 90%;
+        width: 92%;
 
         &::before {
             left: 0;
@@ -492,13 +496,21 @@ $timeline-item-card-radius: 8px;
             .timeline-content {
                 float: right;
                 text-align: left;
-                width: 90%;
+                width: 92%;
 
                 &::before, &.right::before {
                     border-left: 0;
                     border-right: 7px solid $timeline-color;
                     left: 10%;
                     margin-left: -6px;
+                }
+
+                &.left .timeline-date::before {
+                    content: '\2014\00a0';
+                }
+
+                &.left .timeline-date::after {
+                    content: '';
                 }
             }
 
