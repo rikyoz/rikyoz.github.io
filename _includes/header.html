@@ -42,7 +42,7 @@
         {%- endif %}
         <meta name="twitter:title" content="{{ page_title }}">
         <meta name="twitter:description" content="{{ meta_description }}">
-        <meta name="twitter:image:src" content="{{ user.avatar_url }}">
+        <meta name="twitter:image" content="{{ user.avatar_url }}">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <meta name="theme-color" content="#24292e" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,7 +50,8 @@
         {%- comment %}
         <link href="//fonts.googleapis.com/css?family=Lato:700|Open+Sans&display=swap" rel="stylesheet">
         {% endcomment %}
+        <link href="//unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
         <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
         <link href="/favicon.ico" rel="icon" type="image/x-icon">
     </head>
-    <body class="bg-gray-light min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+    <body class="min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>

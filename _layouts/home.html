@@ -3,29 +3,37 @@
         <header class="header p-responsive text-center pt-4">
         {%- include masthead.html metadata=true %}
         </header>
-        <div class="container-lg py-3 p-responsive text-center">
+        <main class="container-lg py-3 p-responsive text-center">
             {%- if content != blank %}
-            <div{% if site.style == 'dark' %} class="text-white"{% endif %}>
+            <section class="about-me mb-2">
+                <h2{% if site.style == 'dark' %} class="text-white"{% endif %}><span>About <strong>Me</strong></span></h2>
+                <p class="f3 mb-3">
                 {{ content }}
-            </div>
+                </p>
+            </section>
             {%- endif %}
-            <div class="mb-2 projects">
+            <section class="projects mb-2">
                 {%- include projects.html %}
-            </div>
-            <div class="mb-2 skills">
+            </section>
+            <section class="skills mb-2">
                 {%- include skills.html %}
-            </div>
+            </section>
+            {%- if site.education %}
+            <section class="education mb-2">
+                {%- include education.html %}
+            </section>
+            {%- endif %}
             {%- if site.topics %}
-            <div class="mb-2">
+            <section class="interests mb-2">
                 {%- include interests.html %}
-            </div>
+            </section>
             {%- endif %}
             {%- unless posts_total == 0 %}
-            <div class="mb-2">
+            <section class="mb-2">
                 {%- include thoughts.html %}
-            </div>
+            </section>
             {%- endunless %}
-        </div>
+        </main>
 {%- else %}
         <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
             <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">

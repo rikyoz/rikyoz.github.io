@@ -1,7 +1,7 @@
 layout: stacked
 style: light
 title: Riccardo Ostani
-description: Software Developer 💻
+description: Software Developer
 url: "https://rikyoz.github.io/"
 plugins:
   - jekyll-github-metadata
@@ -40,19 +40,68 @@ social_media:
   # website: http://your_website_url
   # youtube: your_username
 
-topics:
-  - name: Cyber Security
-    web_url: https://github.com/topics/security
-    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/shield.svg
+skills:
+  languages:
+    - C++
+    - Java
+    - Python
+    - HTML5
+    - CSS3
+    - XML
+    - JSON
+    - JavaScript
+    - PHP
+    - SQL
 
-  - name: Software Development
-    web_url: https://github.com/topics/development
-    image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/code.svg
+  frameworks & tools:
+    - Git
+    - GitHub
+    - Qt
+    - QtCreator
+    - Visual Studio
+    - Android Studio
+    - IntelliJ Idea
+    - CLion
+    - VirtualBox
+    - Photoshop
 
-  - name: C++
-    web_url: https://github.com/topics/cplusplus
-    image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/c++.svg
+  platforms:
+    - Windows
+    - Linux
+    - Android
 
-  - name: Python
-    web_url: https://github.com/topics/python
-    image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/python.svg
+education:
+  - type: Bachelor's Degree
+    title: Ingegneria Informatica e Automatica
+    thesis: "Catch: progettazione e realizzazione dell'applicazione Android"
+    where: Università degli Studi di Roma &ldquo;La Sapienza&rdquo;
+    language: Italian
+    mark: 110
+    date: March 30, 2016
+    octicon: mortar-board
+
+  - type: Master's Degree
+    title: Engineering in Computer Science
+    thesis: "APTScout: Windows API Usage for APT Malware Analysis"
+    where: Università degli Studi di Roma &ldquo;La Sapienza&rdquo;
+    language: English
+    mark: 110 (with honors)
+    date: January 20, 2020
+    octicon: mortar-board
+
+# topics:
+#   - name: Cyber Security
+#     web_url: https://github.com/topics/security
+#     image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/shield.svg
+
+#   - name: Software Development
+#     web_url: https://github.com/topics/development
+#     image_url: https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/code.svg
+
+#   - name: C++
+#     web_url: https://github.com/topics/cplusplus
+#     image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/c++.svg
+
+#   - name: Python
+#     web_url: https://github.com/topics/python
+#     image_url: https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/python.svg
