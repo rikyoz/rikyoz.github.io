@@ -1,14 +1,14 @@
 
                 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}><span>My <strong>Education</strong></span></h2>
                 <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% endif %}">The studies I have completed.</p>
-                <div class="mb-4 mx-auto timeline">
+                <div class="px-4 mx-auto timeline">
                 {%- for degree in site.education %}
                     <div class="timeline-item">
                         <div class="timeline-icon"></div>
                         <div class="timeline-content {% cycle 'left', 'right'%}">
                             <h5 class="degree-type">{{ degree.type }} in</h5>
                             <h3>{{ degree.title }} {% octicon {{ degree.octicon }} width:24 class:"v-align-middle icon" %}</h3>
-                            <h4><span class="small">Thesis:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
+                            <h4><span class="small">Thesis title:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
                             <h4><span class="small">Final mark:</span> {{ degree.mark }}</h4>
                             <h5><span class="small">University:</span> {{ degree.where }}</h5>
                             <h5 class="timeline-date">{{ degree.date }}</h5>

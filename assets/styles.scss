@@ -409,7 +409,7 @@ $timeline-item-card-radius: 8px;
             color: white;
             text-align: center;
             line-height: $icon-size;
-            border: medium solid white;
+            border: 0.20em solid white;
             box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.1);
         }
 
@@ -432,16 +432,11 @@ $timeline-item-card-radius: 8px;
             }
 
             h3 {
-                font-size: 1.25rem;
                 color: $theme-color;
             }
 
-            h4 {
-                font-size: 0.9rem;
-            }
-
             h5 {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
 
             .degree-type {
@@ -491,7 +486,7 @@ $timeline-item-card-radius: 8px;
             .timeline-content {
                 float: right;
                 text-align: left;
-                width: 90%;
+                width: 94%;
 
                 &::before, &.right::before {
                     border-left: 0;
