@@ -112,7 +112,11 @@ body {
 }
 
 @mixin horizontal_line() {
-    @include linear_gradient(left, rgba(0,0,0,0), $theme-color, rgba(0,0,0,0));
+    @include linear_gradient(left, rgba(0,0,0,0), $dark-theme-color, rgba(0,0,0,0));
+}
+
+strong {
+    font-weight: 700 !important;
 }
 
 .p-responsive {
@@ -123,6 +127,8 @@ body {
         font-weight: normal;
         line-height: 1px;
         margin: 20px 0 20px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-display: swap;
         @include horizontal_line();
 
         span {
@@ -187,9 +193,10 @@ body {
     }
 }
 
-.f4 {
+main {
     font-family: 'Open Sans', sans-serif;
     font-display: swap;
+    color: $dark-theme-color;
 }
 
 @font-face {
