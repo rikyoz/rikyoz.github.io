@@ -1,0 +1,17 @@
+                    {%- if user.name %}
+                    <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }}" rel="nofollow noopener noreferrer" target="_blank" title="GitHub: {{ user.login }}">
+                        {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub %}
+                    </a>
+                    {%- endif -%}
+                    {%- if site.social_media -%}
+                    {%- for account in site.social_media -%}
+                    {%- assign service_shortname = account[0] -%}
+                    {%- assign service = site.data.social_media[service_shortname] %}
+                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{{ metadata_styles }}" aria-label="{{ service.name }}" target="_blank" rel="nofollow noopener noreferrer" title="{{ service.name }}: {{ account[1] }}">
+                        {{ service.icon_svg }}
+                    </a>
+                    {%- endfor -%}
+                    {%- endif -%}
+                    {%- if user.hireable -%}
+                    <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+                    {%- endif %}
