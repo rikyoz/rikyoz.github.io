@@ -9,6 +9,11 @@ $dark-theme-color: #37474F; //Material Blue Gray 800
 //lighten(#263238, 10%);//#263238; //Material Blue Gray 900
 $light-theme-color: #ECEFF1; //Material Blue Gray 50
 
+::selection {
+    background-color: $theme-color;
+    color: $light-theme-color;
+}
+
 main a, footer a {
     color: $theme-color;
 }
@@ -155,7 +160,6 @@ strong {
 }
 
 .emoji {
-
     vertical-align: middle;
 }
 
@@ -202,6 +206,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-display: swap;
     color: $dark-theme-color;
+    text-shadow: 1px 1px 0 white;
 }
 
 @font-face {
@@ -308,6 +313,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-display: swap;
     text-align: center;
+    text-shadow: none;
 
     h3 {
         text-transform: capitalize;
@@ -497,6 +503,10 @@ $timeline-item-card-radius: 8px;
 
 
 @media screen and (max-width: 39.9375em) {
+    header .CircleBadge--large {
+        width: 128px;
+    }
+
     .timeline {
         margin: 0;
         padding: 0;
