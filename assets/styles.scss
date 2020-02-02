@@ -565,12 +565,28 @@ footer {
 
     svg {
         opacity: 0.75;
-        transition: opacity ease-in 250ms;
-        -webkit-transition: opacity ease-in 250ms;
+        transition: ease-in 250ms;
+        -webkit-transition: ease-in 250ms;
 
         &:hover {
             opacity: 1.0;
         }
+    }
+
+    .html5-icon:hover {
+        filter: -webkit-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+        filter: -moz-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+        filter: -ms-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+        filter: -o-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+        filter: drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+    }
+
+    .css3-icon:hover {
+        filter: -webkit-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
+        filter: -moz-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
+        filter: -ms-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
+        filter: -o-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
+        filter: drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
     }
 
     .f4 a {
