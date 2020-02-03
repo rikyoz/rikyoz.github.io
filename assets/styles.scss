@@ -9,7 +9,13 @@ $dark-theme-color: #37474F; //Material Blue Gray 800
 //lighten(#263238, 10%);//#263238; //Material Blue Gray 900
 $light-theme-color: #ECEFF1; //Material Blue Gray 50
 
-::selection {
+*::selection {
+    text-shadow: none;
+    background-color: rgba($theme-color, 0.99);
+    color: $light-theme-color;
+}
+
+*::-moz-selection {
     text-shadow: none;
     background-color: $theme-color;
     color: $light-theme-color;
@@ -130,7 +136,7 @@ body {
 h2 strong {
     font-weight: 700 !important;
     background-color: $theme-color;
-    color: white;
+    color: $light-theme-color;
     padding: 1px 6px;
     border-radius: 4px;
 }
