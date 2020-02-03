@@ -10,6 +10,7 @@ $dark-theme-color: #37474F; //Material Blue Gray 800
 $light-theme-color: #ECEFF1; //Material Blue Gray 50
 
 ::selection {
+    text-shadow: none;
     background-color: $theme-color;
     color: $light-theme-color;
 }
@@ -123,11 +124,19 @@ body {
 }
 
 @mixin horizontal_line() {
-    @include linear_gradient(left, rgba(0,0,0,0), $dark-theme-color, rgba(0,0,0,0));
+    @include linear_gradient(left, rgba(0,0,0,0), $theme-color, rgba(0,0,0,0));
 }
 
-strong {
+h2 strong {
     font-weight: 700 !important;
+    background-color: $theme-color;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+.about-me .f3 strong {
+    //font-style: italic;
 }
 
 .p-responsive {
@@ -222,7 +231,7 @@ main {
 
 @mixin repo-color($color, $icon) {
     position: relative;
-    color: darken($color, 20%);
+    color: darken($color, 25%);
     font-family: 'Open Sans', sans-serif;
     font-display: swap;
     text-shadow: 1px 1px 1px white;
