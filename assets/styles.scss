@@ -570,18 +570,12 @@ footer {
         }
     }
 
-    span {
-        padding: 0 10px;
+    .copyright a .octicon {
+        margin-right: 4px;
     }
 
-    svg {
-        opacity: 0.75;
-        transition: ease-in 250ms;
-        -webkit-transition: ease-in 250ms;
-
-        &:hover {
-            opacity: 1.0;
-        }
+    span {
+        padding: 0 10px;
     }
 
     .html5-icon:hover {
