@@ -570,8 +570,12 @@ footer {
         }
     }
 
-    .copyright a .octicon {
-        margin-right: 4px;
+    .copyright a {
+        display: inline-block;
+
+        .octicon {
+            margin-right: 4px;
+        }
     }
 
     span {
