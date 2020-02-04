@@ -1,5 +1,5 @@
 
-                    <div class="github-component box-shadow-medium d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} rounded-1 p-3 repo {{ repository.language | downcase | replace: '++', 'pp' }}">
+                    <div class="github-component box-shadow-medium d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}text-shadow-light border border-gray-light{% endif %} rounded-1 p-3 repo {{ repository.language | downcase | replace: '++', 'pp' }}">
                         <h3 class="d-flex flex-justify-between flex-items-start mb-1 f4 lh-condensed">
                             <a href="{{ repository.html_url }}" itemprop="name" title="{{ repository.name }}">
                                 {% octicon repo height:20 class:"mr-1 v-align-middle icon" fill:"#586069" aria-label:repository %}

@@ -1,13 +1,13 @@
 
                 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}><span>My <strong>Education</strong></span></h2>
-                <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% endif %}">The studies I have completed.</p>
+                <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-shadow-light{% endif %}">The studies I have completed.</p>
                 <div class="mx-auto timeline">
                 {%- for degree in site.education %}
                     <div class="timeline-item">
                         <span class="timeline-icon">
                             {% octicon {{ degree.octicon }} width:16 class:"v-align-middle icon" %}
                         </span>
-                        <div class="timeline-content {% cycle 'left', 'right'%}">
+                        <div class="timeline-content text-shadow-light {% cycle 'left', 'right'%}">
                             <h5 class="degree-type">{{ degree.type }} in</h5>
                             <h3>{{ degree.title }}</h3>
                             <h4><span>Thesis:</span> &ldquo;{{ degree.thesis }}&rdquo;</h4>
