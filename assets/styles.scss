@@ -22,18 +22,23 @@ $light-theme-color: #ECEFF1; //Material Blue Gray 50
 }
 
 main a, footer a {
-    color: $theme-color;
+    color: $dark-theme-color;
 }
 
 header {
     position: relative;
     overflow: hidden;
+    background-color: #1b2226;
+    background-image: url("../assets/headerbg6.webp");
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 2px 0.5em rgba(39, 48, 53, 0.6);
     text-shadow: 0 2px 10px #000;
 
     .CircleBadge {
         box-shadow: 0 2px 10px #000;
         padding: 6px;
+        z-index: 1;
     }
 
     .CircleBadge--large {
@@ -60,27 +65,6 @@ header {
                 -webkit-transition: opacity ease-in 250ms;
             }
         }
-    }
-
-    &::after {
-        content: ' ';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        padding-top: 15em;
-        filter: blur(2px) brightness(70%);
-        -webkit-filter: blur(2px) brightness(70%);
-        background-color: #273136;
-        background-image: url("../assets/headerbg4.webp");
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
     }
 }
 
@@ -269,14 +253,14 @@ main {
         z-index: 100;
     }
     .language {
-        color: darken($color, 20%);
+        color: darken($color, 25%);
     }
     .icon {
-        fill: darken($color, 20%);
+        fill: darken($color, 25%);
         background: transparent;
     }
     a {
-        color: darken($color, 20%);
+        color: darken($color, 25%);
     }
 }
 
@@ -355,11 +339,11 @@ main {
         display: inline-block;
         width: fit-content;
         background-color: $theme-color;
+        text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
         border-radius: 4px;
         padding: 2px 8px;
         margin-bottom: 4px;
-        color: $light-theme-color;
-        font-weight: 500;
+        color: white;
         -webkit-transition: .2s;
         transition: .2s;
     }
@@ -473,12 +457,13 @@ $timeline-item-card-radius: 8px;
                 color: $theme-color;
             }
 
-            h5 {
-                font-size: 0.9rem;
-            }
-
             .degree-type {
-                color: $theme-color;
+                display:inline-block;
+                text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
+                background-color: $theme-color;
+                border-radius: 4px;
+                padding: 2px 6px;
+                color: white;
             }
 
             .timeline-content-date {
@@ -571,6 +556,16 @@ $timeline-item-card-radius: 8px;
 footer {
     // @include linear_gradient(top, rgba(0,0,0,0), rgba(0,0,0,0), rgba($theme-color, 0.05), rgba($theme-color, 0.08));
 
+    a {
+        font-weight: 600;
+        transition: color ease-in 250ms;
+        -webkit-transition: color ease-in 250ms;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
     span {
         padding: 0 10px;
     }
@@ -593,7 +588,7 @@ footer {
         filter: drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
     }
 
-    .css3-icon:hover {
+    .css3-icon:hover { //Note: CSS3 icon blue color, no $theme-color!
         filter: -webkit-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
         filter: -moz-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
         filter: -ms-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
@@ -601,8 +596,9 @@ footer {
         filter: drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
     }
 
-    .f4 a {
+    .icons a {
         text-decoration: none;
+
         svg {
             fill: $dark-theme-color !important;
             transition: fill ease-in 250ms;
