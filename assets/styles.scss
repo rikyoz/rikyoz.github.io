@@ -249,16 +249,20 @@ main {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+
     > div {
         z-index: 100;
     }
+
     .language {
         color: darken($color, 25%);
     }
+
     .icon {
         fill: darken($color, 25%);
         background: transparent;
     }
+
     a {
         color: darken($color, 25%);
     }
