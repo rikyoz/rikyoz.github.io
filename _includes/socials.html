@@ -1,6 +1,6 @@
                     {%- if user.name %}
                     <a href="https://github.com/{{ user.login }}" class="{{ metadata_styles }}" rel="nofollow noopener noreferrer" target="_blank" title="GitHub: {{ user.login }}">
-                        {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub %}
+                        {% octicon mark-github height:20 fill:{{ icon_color }} aria-label:GitHub role:img %}
                     </a>
                     {%- endif -%}
                     {%- if site.social_media -%}
