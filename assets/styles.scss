@@ -250,36 +250,40 @@ h2 strong {
     -moz-transition: .2s;
     -webkit-transition: .2s;
     transition: .2s;
+
     a {
         color: #4078c0;
         text-decoration: none;
     }
+
     .icon {
         background: transparent;
     }
-    > span {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
+
     &.html {
         @include repo-color(#F16529, "\e7f7");
     }
+
     &.css {
         @include repo-color(#29A9DF, "\e679");
     }
+
     &.javascript {
         @include repo-color(#E8C917, "\e845");
     }
+
     &.php {
         @include repo-color(#617CBE, "\eb71");
     }
+
     &.c {
         @include repo-color(#555555, "\e639");
     }
+
     &.cpp {
         @include repo-color(#f34b7d, "\e635");
     }
+
     &.python {
         @include repo-color(#3572A5, "\eb89");
     }
