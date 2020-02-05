@@ -515,12 +515,6 @@ $timeline-item-card-radius: 8px;
     }
 }
 
-/* IE9, IE10, IE11 */
-@media screen and (min-width:0\0) {
-    .html5-icon { max-height: 42px; }
-    .css3-icon { max-height: 42px; }
-}
-
 footer {
     // @include linear_gradient(top, rgba(0,0,0,0), rgba(0,0,0,0), rgba($theme-color, 0.05), rgba($theme-color, 0.08));
 
@@ -557,6 +551,10 @@ footer {
         transition: ease-in 250ms;
         -ms-transition: ease-in 250ms;
         -webkit-transition: ease-in 250ms;
+        /* line-height is 1.5, font-size is 14, there are two lines of text in central span:
+           its height is then 2 * 1.5 * 14px = 42px. Now, some browser incorrectly set the height of svg icons, hence we
+           must set the max height for them to be the same as the central span! */
+        max-height: 42px;
     }
 
     .html5-icon:hover {
