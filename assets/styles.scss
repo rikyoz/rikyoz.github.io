@@ -583,6 +583,7 @@ footer {
 
         svg {
             fill: $dark-theme-color !important;
+            vertical-align: text-bottom;
 
             &:hover {
                 fill: $theme-color !important;
