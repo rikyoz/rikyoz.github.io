@@ -13,13 +13,13 @@
                 {{ user.login }}
                 {%- endif -%}
                 </h1>
-                <p class="mb-3 f3 text-white">
+                <h2 class="mb-3 text-white">
                 {%- if site.description -%}
                 {{- site.description | strip_newlines -}}
                 {%- else -%}
                 {{- user.bio | strip_newlines -}}
                 {%- endif -%}
-                </p>
+                </h2>
 {%- if include.metadata %}
                 {%- if user.location %}
                 <div class="{{ metadata_styles }} f4 text-white">
@@ -27,7 +27,7 @@
                     {{ user.location }}
                 </div>
                 {%- endif %}
-                <div class="f4 mt-3 mb-4 noselect">
+                <div class="f4 mt-3 mb-4 noselect mx-auto">
                     {%- include socials.html %}
                 </div>
 {%- endif %}
