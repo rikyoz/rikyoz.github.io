@@ -80,6 +80,7 @@ header {
 
 h1 {
     font-size: 2.4rem;
+    font-weight: 700;
 }
 
 html, body {
@@ -90,6 +91,15 @@ html, body {
 body {
     //overflow: overlay;
     background-color: $light-theme-color !important;
+    color: $dark-theme-color;
+    font-family: 'Open Sans', sans-serif;
+    font-display: swap;
+    font-smoothing: antialiased;
+    font-variant: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
 
     &::-webkit-scrollbar {
         width: 0.75em;
@@ -125,10 +135,6 @@ h2 strong {
     border-radius: 4px;
 }
 
-.about-me .f3 strong {
-    //font-style: italic;
-}
-
 .p-responsive {
     h2 {
         width: 100%;
@@ -137,8 +143,6 @@ h2 strong {
         font-weight: normal;
         line-height: 1px;
         margin: 20px 0 20px 0;
-        font-family: 'Open Sans', sans-serif;
-        font-display: swap;
         @include horizontal_line();
 
         span {
@@ -201,12 +205,6 @@ h2 strong {
     }
 }
 
-main {
-    font-family: 'Open Sans', sans-serif;
-    font-display: swap;
-    color: $dark-theme-color;
-}
-
 @font-face {
     font-family: 'devicon';
     src:url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.eot?-hdf3wh');
@@ -222,8 +220,6 @@ main {
 @mixin repo-color($color, $icon) {
     position: relative;
     color: darken($color, 25%);
-    font-family: 'Open Sans', sans-serif;
-    font-display: swap;
     background-color: fade-out($color, 0.9);
     border-color: fade-out($color, 0.5) !important;
     overflow: hidden;
@@ -311,8 +307,6 @@ main {
 }
 
 .skills {
-    font-family: 'Open Sans', sans-serif;
-    font-display: swap;
     text-align: center;
 
     h3 {
@@ -381,8 +375,6 @@ $timeline-item-card-radius: 8px;
     position: relative;
     transition: $timeline-transition;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-display: swap;
 
     &::before {
         background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
