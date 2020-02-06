@@ -7,7 +7,7 @@
                         <h3 itemprop="name">{{ category[0] | capitalize }}</h3>
                         <ul class="noselect">
                             {%- for skill in category[1] %}
-                            <li class="f4" itemprop="itemListElement">{{ skill }}</li>
+                            <li class="f4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Text">{{ skill }}</li>
                             {%- endfor %}
                         </ul>
                     </div>
