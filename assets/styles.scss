@@ -140,17 +140,30 @@ h1 {
 
 main {
     h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         width: 100%;
         color: $dark-theme-color;
         text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
         font-weight: normal;
-        line-height: 1px;
-        margin: 20px 0 20px 0;
-        @include horizontal_line();
+        margin: 10px 0;
 
-        span {
-            background-color: $light-theme-color;
-            padding: 0 10px;
+        &::before, &::after {
+            content: '';
+            flex: 1 0 20px;
+            height: 1px;
+        }
+
+        &::before {
+            margin-right: 10px;
+            @include linear_gradient(left, rgba(0,0,0,0), $theme-color);
+        }
+
+        &::after {
+            margin-left: 10px;
+            @include linear_gradient(left, $theme-color, rgba(0,0,0,0));
         }
     }
 
@@ -169,6 +182,57 @@ h2 strong {
 
 .min-height-full {
     min-height: 100vh;
+}
+
+#about-me {
+    p {
+        text-align: justify;
+    }
+
+    br {
+        content: "";
+        display: block;
+        margin: 0.25rem 0;
+    }
+
+    .wave {
+        cursor: default;
+        animation-name: wave-animation;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        transform-origin: 70% 70%;
+        display: inline-block;
+
+        &:hover {
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+        }
+    }
+
+    @keyframes wave-animation {
+          0% { transform: rotate(  0.0deg) }
+         10% { transform: rotate(-10.0deg) }
+         20% { transform: rotate( 12.0deg) }
+         30% { transform: rotate(-10.0deg) }
+         40% { transform: rotate(  9.0deg) }
+         50% { transform: rotate(  0.0deg) }
+        100% { transform: rotate(  0.0deg) }
+    }
+}
+
+#about-me, footer {
+    a {
+        font-weight: 600;
+        transition: color ease-in 250ms;
+        -ms-transition: color ease-in 250ms;
+        -webkit-transition: color ease-in 250ms;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
 }
 
 .portfolio {
@@ -289,7 +353,7 @@ h2 strong {
     }
 }
 
-.skills {
+#skills {
     text-align: center;
 
     h3 {
@@ -332,7 +396,7 @@ h2 strong {
     }
 }
 
-.education > div {
+#education > div {
     display: inline-block;
     text-align: left;
 }
@@ -526,17 +590,6 @@ footer {
         border: 0;
         height: 1px;
         @include horizontal_line();
-    }
-
-    a {
-        font-weight: 600;
-        transition: color ease-in 250ms;
-        -ms-transition: color ease-in 250ms;
-        -webkit-transition: color ease-in 250ms;
-
-        &:hover {
-            color: $theme-color;
-        }
     }
 
     .copyright a {
