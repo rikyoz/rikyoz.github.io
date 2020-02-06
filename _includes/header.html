@@ -12,7 +12,7 @@
         {%- assign page_title = user.name %}
     {%- endif %}
     {%- if site.description -%}
-        {%- assign page_title = page_title | append: " | " | append: site.description %}
+        {%- assign page_title = page_title %}
         {%- assign meta_description = site.description | strip_html | strip_newlines | xml_escape | truncate: 300 %}
     {%- else %}
         {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
@@ -25,7 +25,9 @@
         <link href="//fonts.googleapis.com/" rel="dns-prefetch" crossorigin>
         <meta charset="utf-8">
         <title>{{ page_title }}</title>
+        <meta name="author" content="{{ site.author }}">
         <meta name="description" content="{{ meta_description }}">
+        <meta name="description" content="{{ site.keywords }}">
         <meta property="og:title" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}" />
         <meta property="og:image" content="{{ user.avatar_url }}">
         <meta property="og:image:width" content="460">
@@ -43,6 +45,7 @@
         <meta name="twitter:title" content="{{ page_title }}">
         <meta name="twitter:description" content="{{ meta_description }}">
         <meta name="twitter:image" content="{{ user.avatar_url }}">
+        <meta name="twitter:image:src" content="{{ user.avatar_url }}">
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta name="theme-color" content="#24292e" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
