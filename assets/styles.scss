@@ -605,7 +605,11 @@ footer {
         @include horizontal_line();
     }
 
-    .copyright a {
+    .copyright > a svg{
+        height: 42px;
+    }
+
+    .copyright span a {
         display: inline-block;
 
         .octicon {
@@ -617,6 +621,10 @@ footer {
         padding: 0 10px;
     }
 
+    .html5-icon, .css3-icon {
+        min-width: 32px;
+    }
+
     .html5-icon, .css3-icon, .icons svg {
         transition: ease-in 250ms;
         -ms-transition: ease-in 250ms;
@@ -625,7 +633,6 @@ footer {
            its height is then 2 * 1.5 * 14px = 42px. Now, some browser incorrectly set the height of svg icons, hence we
            must set the max height for them to be the same as the central span! */
         max-height: 42px;
-        min-width: 32px;
     }
 
     .html5-icon:hover {
