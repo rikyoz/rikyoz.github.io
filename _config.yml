@@ -66,12 +66,16 @@ skills:
   frameworks & tools:
     - Git
     - GitHub
+    - Bitbucket
     - Qt
     - QtCreator
     - Visual Studio
+    - VSCode
     - Android Studio
     - IntelliJ Idea
     - CLion
+    - PyCharm
+    - PHPStorm
     - VirtualBox
     - Photoshop
 
