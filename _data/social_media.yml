@@ -10,7 +10,7 @@ dribbble:
 
 email:
   name: Email
-  profile_url_prefix: https://aemail.com/
+  profile_url_prefix: "&#109;&#97;&#105;&#108;&#116;&#111;&#58;"
   icon_svg: '<svg viewBox="0 0 24 24" version="1.1" width="20" height="20" class="octicon" role="img" aria-label="Email" fill="#ffffff"><path d="M21.6 2.3999999H2.4c-1.32 0-2.38800005 1.08-2.38800005 2.4000001L0 19.2c0 1.32 1.08 2.4 2.4 2.4h19.2c1.32 0 2.4-1.08 2.4-2.4V4.8c0-1.3200002-1.08-2.4000001-2.4-2.4000001zm0 4.8000002L12 13.2 2.4 7.2000001V4.8l9.6 6 9.6-6z"/><path d="M-2 0h24v24H-2z" fill="none"/></svg>'
 
 facebook:
