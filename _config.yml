@@ -23,6 +23,8 @@ sass:
   load_paths:
     - node_modules/
 
+exclude: ["node_modules/"]
+
 defaults:
   -
     scope:
