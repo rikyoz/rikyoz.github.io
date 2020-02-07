@@ -328,6 +328,14 @@ h2 strong {
         background: transparent;
     }
 
+    .repo-stats {
+        line-height: 1;
+
+        a {
+            display: inline-block;
+        }
+    }
+
     &.html {
         @include repo-color(#F16529, "\e7f7");
     }
