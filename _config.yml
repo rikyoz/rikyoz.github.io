@@ -19,11 +19,6 @@ permalink: /:year/:month/:day/:title/
 sass:
   # Where you keep your scss files
   sass_dir: assets/css/
-  # Where sass should look for other scss
-  load_paths:
-    - node_modules/
-
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
 defaults:
   -
