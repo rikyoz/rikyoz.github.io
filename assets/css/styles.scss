@@ -1,5 +1,7 @@
 ---
 ---
+@import "@primer/css/core/index.scss";
+@import "@primer/css/avatars/index.scss";
 //$theme-color: #0288d1; //Material Light Blue 700
 //$theme-color: #0277BD; //Material Light Blue 800
 $theme-color: #1976D2; //Material Blue 700
@@ -76,7 +78,7 @@ header {
     position: relative;
     overflow: hidden;
     background-color: #1b2226;
-    background-image: url("../assets/headerbg6.webp");
+    background-image: url("../images/headerbg6.webp");
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 2px 0.5em rgba(39, 48, 53, 0.6);

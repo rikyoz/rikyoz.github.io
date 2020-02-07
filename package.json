@@ -1,0 +1,19 @@
+{
+  "name": "rikyoz.github.io",
+  "version": "1.0.0",
+  "description": "### Showcase your software development skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikyoz/rikyoz.github.io.git"
+  },
+  "author": "Riccardo Ostani",
+  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikyoz/rikyoz.github.io/issues"
+  },
+  "homepage": "https://github.com/rikyoz/rikyoz.github.io#readme",
+  "dependencies": {
+    "@primer/css": "^14.2.0"
+  }
+}
