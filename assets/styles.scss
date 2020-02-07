@@ -96,6 +96,7 @@ header {
         color: white;
         text-decoration: none;
         max-width: 25px;
+        line-height: 1;
 
         &:hover {
             text-decoration: none;
@@ -644,6 +645,7 @@ footer {
     }
 
     .icons a {
+        line-height: 1;
         text-decoration: none;
         max-width: 25px;
 
