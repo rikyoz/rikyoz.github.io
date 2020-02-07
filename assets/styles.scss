@@ -31,6 +31,10 @@ $light-theme-color: #ECEFF1; //Material Blue Gray 50
                                     supported by Chrome, Opera and Firefox */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -581,6 +585,10 @@ $timeline-item-card-radius: 8px;
             }
         }
     }
+
+    footer span {
+        font-size: 16px !important;
+    }
 }
 
 footer {
@@ -612,6 +620,7 @@ footer {
            its height is then 2 * 1.5 * 14px = 42px. Now, some browser incorrectly set the height of svg icons, hence we
            must set the max height for them to be the same as the central span! */
         max-height: 42px;
+        min-width: 32px;
     }
 
     .html5-icon:hover {
