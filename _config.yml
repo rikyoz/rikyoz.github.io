@@ -52,6 +52,9 @@ social_media:
 skills:
   languages:
     - C++
+    - C++11
+    - C++14
+    - C++17
     - Java
     - Python
     - C
