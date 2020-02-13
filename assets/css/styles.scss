@@ -119,6 +119,14 @@ header {
     h2 {
         font-weight: 400;
     }
+
+    .hire-me {
+        color: white;
+        background-color: $theme-color;
+        //text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
+        border-radius: 4px;
+        padding: 4px 8px;
+    }
 }
 
 /* IE9, IE10, IE11 */

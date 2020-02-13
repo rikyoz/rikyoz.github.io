@@ -23,8 +23,10 @@
 {%- if include.metadata %}
                 {%- if user.location %}
                 <div class="{{ metadata_styles }} f4 text-white">
-                    {% octicon location height:20 fill:{{ icon_color }} aria-label:Location %}
-                    {{ user.location }}
+                    {%- if user.hireable -%}
+                    <span title="Hire me" class="hire-me d-inline-block f5 mr-2">Available for hire</span>
+                    {%- endif %}
+                    <span>{% octicon location height:20 fill:{{ icon_color }} aria-label:Location %} {{ user.location }}</span>
                 </div>
                 {%- endif %}
                 <div class="f4 mt-3 mb-4 noselect mx-auto">
