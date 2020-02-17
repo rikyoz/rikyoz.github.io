@@ -5,7 +5,7 @@ description: A software developer focused on cybersecurity, good design practice
 keywords: Riccardo, Ostani, software, developer, graduated, engineering, computer, science, master's degree, fast learner, highly motivated, hard-working, hard working, cybersecurity, cyber, security, software development, programming, coding, secure coding, clean coding, bit7z, QtCryptoHash, MrHash, APTScout, C++, Java, Python
 author: Riccardo Ostani
 job: Software Developer
-url: "https://rikyoz.github.io/"
+url: "https://rikyoz.dev/"
 
 plugins:
   - jekyll-github-metadata
