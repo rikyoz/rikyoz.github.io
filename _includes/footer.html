@@ -19,5 +19,17 @@
                 {%- include socials.html %}
             </div>
         </footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58175742-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-58175742-3', {
+                'store_gac': false,
+                'anonymize_ip': true,  // you don't need full IP addresses
+                'client_storage': 'none'  // do not set cookies
+            });
+        </script>
     </body>
 </html>
