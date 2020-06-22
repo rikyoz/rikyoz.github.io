@@ -21,6 +21,7 @@
 <!doctype html>
 <html class="min-height-full" lang="en">
     <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src https:">
         <link href="//fonts.googleapis.com/" rel="preconnect" crossorigin>
         <link href="//fonts.googleapis.com/" rel="dns-prefetch" crossorigin>
         <meta charset="utf-8">
@@ -56,7 +57,7 @@
         <link href="https://unpkg.com/@primer/css/dist/core.css" rel="stylesheet" />
         <link href="https://unpkg.com/@primer/css/dist/avatars.css" rel="stylesheet" />
         {% endcomment %}
-        <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@primer/css@14.4.0/dist/primer.css" rel="stylesheet" integrity="sha384-kg6kqLSMDJ5J+CT9WEUpmYm7cYZE8aSAHeL1HbhV0D6c0vK5T/II3aY7KluUWZZ5" crossorigin="anonymous"/>
         <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
         <link href="/favicon.ico" rel="icon" type="image/x-icon">
     </head>
