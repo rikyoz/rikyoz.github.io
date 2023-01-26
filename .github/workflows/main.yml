@@ -2,7 +2,7 @@ name: "main"
 on:
   push:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, skip ci]
   schedule:
     # Every day
     - cron:  '0 10 */1 * *'
