@@ -4,7 +4,7 @@
     {%- assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {%- endif %}
                 <img src="{{ user.avatar_url }}" class="mb-2 CircleBadge CircleBadge--large mx-auto CircleBadge-icon" alt="{{ user.name }}'s Avatar">
-                <h1 class="color-text-white mb-2 lh-condensed">
+                <h1 class="color-fg-on-emphasis mb-2 lh-condensed">
                 {%- if site.author -%}
                 {{ site.author }}
                 {%- else if user.name -%}
@@ -13,7 +13,7 @@
                 {{ user.login }}
                 {%- endif -%}
                 </h1>
-                <h2 class="mb-3 color-text-white">
+                <h2 class="mb-3 color-fg-on-emphasis">
                 {%- if site.job -%}
                 {{- site.job | strip_newlines -}}
                 {%- else -%}
@@ -22,7 +22,7 @@
                 </h2>
 {%- if include.metadata %}
                 {%- if user.location %}
-                <div class="{{ metadata_styles }} f4 color-text-white">
+                <div class="{{ metadata_styles }} f4 color-fg-on-emphasis">
                     {%- if user.hireable -%}
                     <span title="Hire me" class="hire-me d-inline-block f5 mr-2">Available for hire</span>
                     {%- endif %}
