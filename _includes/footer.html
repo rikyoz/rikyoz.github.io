@@ -26,9 +26,11 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-XPXD8ZW3R0', {
-                'store_gac': false,
-                'anonymize_ip': true,  // you don't need full IP addresses
-                'client_storage': 'none'  // do not set cookies
+                ad_storage: 'denied',
+                analytics_storage: 'denied',
+                functionality_storage: 'denied',
+                personalization_storage: 'denied',
+                security_storage: 'granted'
             });
         </script>
         {%- comment %} Note: if you change the script above, change the hash value in CSP meta tag!{%- endcomment %}
