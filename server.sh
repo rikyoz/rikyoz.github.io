@@ -1,3 +1,3 @@
 #!/bin/sh
 
-watchexec -e yml -r -s SIGINT -- bundle exec jekyll serve --watch --open-url --livereload
+bundle exec jekyll serve --watch --force_polling --open-url --livereload
