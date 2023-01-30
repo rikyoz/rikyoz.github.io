@@ -4,7 +4,7 @@
                 <div class="d-sm-flex flex-wrap gutter-condensed mb-4 skills">
                 {%- for category in site.skills %}
                     <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3 mx-auto" itemscope itemtype="https://schema.org/ItemList">
-                        <meta itemprop="itemListOrder" content="Unordered" />
+                        <meta itemprop="itemListOrder" content="Unordered">
                         <h3 itemprop="name">{{ category[0] | capitalize }}</h3>
                         <ul class="noselect">
                             {%- for skill in category[1] %}
