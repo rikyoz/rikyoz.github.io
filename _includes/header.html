@@ -29,7 +29,7 @@
         <meta name="author" content="{{ site.author }}">
         <meta name="description" content="{{ meta_description }}">
         <meta name="keywords" content="{{ site.keywords }}">
-        <meta property="og:title" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}" />
+        <meta property="og:title" content="{%- if site.title -%}{{ site.title }}{%- else -%}{{ user.name }}{% endif %}">
         <meta property="og:image" content="{{ user.avatar_url }}">
         <meta property="og:image:width" content="460">
         <meta property="og:image:height" content="460">
@@ -51,8 +51,8 @@
         <meta name="no-email-collection" content="https://www.unspam.com/noemailcollection">
         <meta name="theme-color" content="#24292e">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link href="https://fonts.bunny.net/css?family=open-sans:400,600,700&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
-        <link href="https://unpkg.com/@primer/css@20.8.0/dist/primer.css" rel="stylesheet" rel="preload" as="style" integrity="sha384-3jGm5B2I1j9UOIKZBLhKrrhqc3d2C0lbu3GJ3LrWoQxzXG8moi1FZnNeUilT/Qsd" crossorigin="anonymous">
+        <link href="https://fonts.bunny.net/css?family=open-sans:400,600,700&display=swap" rel="stylesheet preload" as="font" crossorigin="anonymous">
+        <link href="https://unpkg.com/@primer/css@20.8.0/dist/primer.css" rel="stylesheet preload" as="style" integrity="sha384-3jGm5B2I1j9UOIKZBLhKrrhqc3d2C0lbu3GJ3LrWoQxzXG8moi1FZnNeUilT/Qsd" crossorigin="anonymous">
         <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
         <link href="/favicon.ico" rel="icon" type="image/x-icon">
     </head>
