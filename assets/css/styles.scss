@@ -11,7 +11,7 @@ $light-theme-color: #ECEFF1; //Material Blue Gray 50
 
 *::selection {
     text-shadow: none;
-    background-color: rgba($theme-color, 0.99);
+    background-color: rgba($theme-color, .99);
     color: $light-theme-color;
 }
 
@@ -47,24 +47,24 @@ body {
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-display: swap;
     font-smoothing: antialiased;
-    font-variant: normal;
-    font-weight: normal;
+    font-variant: 400;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-transform: none;
 
     &::-webkit-scrollbar {
-        width: 0.8em;
+        width: .8em;
     }
 
     &::-webkit-scrollbar-track {
-        background: rgba(39, 48, 53, 0.1);
+        background: rgba(39, 48, 53, .1);
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: rgb(55, 63, 71);
         outline: 1px solid slategrey;
-        border-radius: 0.375em;
+        border-radius: .375em;
     }
 }
 
@@ -79,7 +79,7 @@ header {
     background-image: url("../images/headerbg6.webp");
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 2px 0.5em rgba(39, 48, 53, 0.6);
+    box-shadow: 0 2px .5em rgba(39, 48, 53, .6);
     text-shadow: 0 2px 10px #000;
 
     .CircleBadge {
@@ -93,7 +93,7 @@ header {
     }
 
     a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         max-width: 25px;
         line-height: 1;
@@ -103,7 +103,7 @@ header {
         }
 
         svg {
-            opacity: 0.5;
+            opacity: .5;
             transition: opacity ease-in 250ms;
             -ms-transition: opacity ease-in 250ms;
             -moz-transition: opacity ease-in 250ms;
@@ -121,9 +121,9 @@ header {
     }
 
     .hire-me {
-        color: white;
+        color: #fff;
         background-color: $theme-color;
-        //text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
+        //text-shadow: 1px 1px 3px rgba($dark-theme-color, .4);
         border-radius: 4px;
         padding: 4px 8px;
     }
@@ -131,7 +131,7 @@ header {
 
 /* IE9, IE10, IE11 */
 @media screen and (min-width:0\0) {
-    .CircleBadge { border: solid white; }
+    .CircleBadge { border: solid #fff; }
 }
 
 h1 {
@@ -159,8 +159,8 @@ main {
         text-align: center;
         width: 100%;
         color: $dark-theme-color;
-        text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
-        font-weight: normal;
+        text-shadow: 1px 1px 3px rgba($dark-theme-color, .4);
+        font-weight: 400;
         margin: 10px 0;
 
         &::before, &::after {
@@ -188,7 +188,7 @@ main {
 h2 strong {
     font-weight: 700 !important;
     background-color: $theme-color;
-    color: white;
+    color: #fff;
     padding: 1px 6px;
     border-radius: 4px;
 }
@@ -205,7 +205,7 @@ h2 strong {
     br {
         content: "";
         display: block;
-        margin: 0.25rem 0;
+        margin: .25rem 0;
     }
 
     .wave {
@@ -225,13 +225,13 @@ h2 strong {
     }
 
     @keyframes wave-animation {
-          0% { transform: rotate(  0.0deg) }
-         10% { transform: rotate(-10.0deg) }
-         20% { transform: rotate( 12.0deg) }
-         30% { transform: rotate(-10.0deg) }
-         40% { transform: rotate(  9.0deg) }
-         50% { transform: rotate(  0.0deg) }
-        100% { transform: rotate(  0.0deg) }
+          0% { transform: rotate(  0) }
+         10% { transform: rotate(-10deg) }
+         20% { transform: rotate( 12deg) }
+         30% { transform: rotate(-10deg) }
+         40% { transform: rotate(  9deg) }
+         50% { transform: rotate(  0) }
+        100% { transform: rotate(  0) }
     }
 }
 
@@ -251,7 +251,7 @@ h2 strong {
 .portfolio {
     &:hover {
         .repo {
-            opacity: 0.5;
+            opacity: .5;
             &:hover {
                 opacity: 1;
             }
@@ -266,28 +266,28 @@ h2 strong {
         url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.woff?-hdf3wh') format('woff'),
         url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.ttf?-hdf3wh') format('truetype'),
         url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/fonts/devicon.svg?-hdf3wh#devicon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;
+    font-style: 400;
     font-display: block;
 }
 
 @mixin repo-color($color, $icon) {
     position: relative;
     color: darken($color, 25%);
-    background-color: fade-out($color, 0.9);
-    border-color: fade-out($color, 0.5) !important;
+    background-color: fade-out($color, .9);
+    border-color: fade-out($color, .5) !important;
     overflow: hidden;
 
     &::before {
         content: $icon;
         display: block;
         text-shadow: none;
-        color: fade-out($color, 0.8);
+        color: fade-out($color, .8);
         font-family: 'devicon';
         speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
+        font-style: 400;
+        font-weight: 400;
+        font-variant: 400;
         text-transform: none;
         line-height: 1;
         font-size: 8em;
@@ -319,7 +319,7 @@ h2 strong {
 }
 
 .repo {
-    background-color: fade-out(#4078c0, 0.9);
+    background-color: fade-out(#4078c0, .9);
     background-clip: border-box;
     border-style: solid;
     border-width: 1px;
@@ -388,7 +388,7 @@ h2 strong {
 
         &:hover {
             li {
-                opacity: 0.5;
+                opacity: .5;
 
                 &:hover{
                     opacity: 1.0;
@@ -401,11 +401,11 @@ h2 strong {
         display: inline-block;
         width: fit-content;
         background-color: $theme-color;
-        text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
+        text-shadow: 1px 1px 3px rgba($dark-theme-color, .4);
         border-radius: 4px;
         padding: 2px 8px;
         margin-bottom: 4px;
-        color: white;
+        color: #fff;
         -ms-transition: .2s;
         -moz-transition: .2s;
         -webkit-transition: .2s;
@@ -420,8 +420,8 @@ h2 strong {
 
 $timeline-color: #B0BEC5;
 $timeline-width: 1px;
-$timeline-transition: all 0.25s ease-in;
-$timeline-item-card-bg: white;
+$timeline-transition: all .25s ease-in;
+$timeline-item-card-bg: #fff;
 $timeline-item-card: false;
 $timeline-item-card-radius: 8px;
 
@@ -463,7 +463,7 @@ $timeline-item-card-radius: 8px;
     }
 
     a {
-        font-weight: bold;
+        font-weight: 700;
         transition: $timeline-transition;
 
         &:hover {
@@ -487,10 +487,10 @@ $timeline-item-card-radius: 8px;
             margin-top: -$icon-size/2;
             overflow: hidden;
             position: absolute;
-            color: white;
+            color: #fff;
             text-align: center;
-            border: 0.20rem solid white;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+            border: .20rem solid #fff;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 rgba(0, 0, 0, .1);
 
             svg {
                 margin-top: -1px;
@@ -510,8 +510,8 @@ $timeline-item-card-radius: 8px;
             }
 
             span {
-                font-weight: normal;
-                opacity: 0.9;
+                font-weight: 400;
+                opacity: .9;
             }
 
             h3 {
@@ -520,16 +520,16 @@ $timeline-item-card-radius: 8px;
 
             .degree-type {
                 display:inline-block;
-                text-shadow: 1px 1px 3px rgba($dark-theme-color, 0.4);
+                text-shadow: 1px 1px 3px rgba($dark-theme-color, .4);
                 background-color: $theme-color;
                 border-radius: 4px;
                 padding: 2px 6px;
-                color: white;
+                color: #fff;
             }
 
             .timeline-content-date {
                 font-size: 16px;
-                font-weight: bold;
+                font-weight: 700;
                 margin-bottom: 0;
             }
 
@@ -604,7 +604,7 @@ $timeline-item-card-radius: 8px;
 }
 
 footer {
-    // @include linear_gradient(top, rgba(0,0,0,0), rgba(0,0,0,0), rgba($theme-color, 0.05), rgba($theme-color, 0.08));
+    // @include linear_gradient(top, rgba(0,0,0,0), rgba(0,0,0,0), rgba($theme-color, .05), rgba($theme-color, .08));
 
     hr {
         border: 0;
@@ -643,19 +643,19 @@ footer {
     }
 
     .html5-icon:hover {
-        filter: -webkit-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
-        filter: -moz-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
-        filter: -ms-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
-        filter: -o-drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
-        filter: drop-shadow(0 2px 5px rgba(228, 76, 38, 0.5));
+        filter: -webkit-drop-shadow(0 2px 5px rgba(228, 76, 38, .5));
+        filter: -moz-drop-shadow(0 2px 5px rgba(228, 76, 38, .5));
+        filter: -ms-drop-shadow(0 2px 5px rgba(228, 76, 38, .5));
+        filter: -o-drop-shadow(0 2px 5px rgba(228, 76, 38, .5));
+        filter: drop-shadow(0 2px 5px rgba(228, 76, 38, .5));
     }
 
     .css3-icon:hover { //Note: CSS3 icon blue color, no $theme-color!
-        filter: -webkit-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
-        filter: -moz-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
-        filter: -ms-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
-        filter: -o-drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
-        filter: drop-shadow(0 2px 5px rgba(#1572B6, 0.5));
+        filter: -webkit-drop-shadow(0 2px 5px rgba(#1572B6, .5));
+        filter: -moz-drop-shadow(0 2px 5px rgba(#1572B6, .5));
+        filter: -ms-drop-shadow(0 2px 5px rgba(#1572B6, .5));
+        filter: -o-drop-shadow(0 2px 5px rgba(#1572B6, .5));
+        filter: drop-shadow(0 2px 5px rgba(#1572B6, .5));
     }
 
     .icons a {
