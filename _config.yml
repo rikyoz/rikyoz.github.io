@@ -91,6 +91,15 @@ skills:
     - Android
 
 education:
+  - type: Master's Degree
+    title: Engineering in Computer Science
+    thesis: "APTScout: Windows API Usage<br>for APT Malware Analysis"
+    where: Università degli Studi di Roma &ldquo;La Sapienza&rdquo;
+    language: English
+    mark: 110 (with honors)
+    date: January 20, 2020
+    octicon: mortar-board
+    
   - type: Bachelor's Degree
     title: Ingegneria Informatica e Automatica
     thesis: "Catch: progettazione e realizzazione dell'applicazione Android"
@@ -98,15 +107,6 @@ education:
     language: Italian
     mark: 110
     date: March 30, 2016
-    octicon: mortar-board
-
-  - type: Master's Degree
-    title: Engineering in Computer Science
-    thesis: "APTScout: Windows API Usage for APT Malware Analysis"
-    where: Università degli Studi di Roma &ldquo;La Sapienza&rdquo;
-    language: English
-    mark: 110 (with honors)
-    date: January 20, 2020
     octicon: mortar-board
 
 # topics:
