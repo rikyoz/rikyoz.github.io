@@ -442,11 +442,11 @@ $timeline-item-card-radius: 8px;
     width: 100%;
 
     &::before {
-        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
-        background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
-        background-image:     -ms-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
-        background-image:      -o-linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
-        background-image:         linear-gradient(top, rgba(0,0,0,0), $theme-color, $theme-color, $theme-color);
+        background-image: -webkit-linear-gradient(top, $theme-color, $theme-color, $theme-color, rgba(0,0,0,0));
+        background-image:    -moz-linear-gradient(top, $theme-color, $theme-color, $theme-color, rgba(0,0,0,0));
+        background-image:     -ms-linear-gradient(top, $theme-color, $theme-color, $theme-color, rgba(0,0,0,0));
+        background-image:      -o-linear-gradient(top, $theme-color, $theme-color, $theme-color, rgba(0,0,0,0));
+        background-image:         linear-gradient(top, $theme-color, $theme-color, $theme-color, rgba(0,0,0,0));
         content: '';
         height: 100%;
         left: 50%;
