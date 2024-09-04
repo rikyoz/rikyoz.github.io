@@ -21,9 +21,7 @@
 <!doctype html>
 <html class="min-height-full" lang="en">
     <head>
-        <meta http-equiv="Content-Security-Policy" content="font-src 'self' https://unpkg.com/ https://fonts.gstatic.com/ https://fonts.bunny.net/ https://cdnjs.cloudflare.com/; img-src 'self' https://*.githubusercontent.com/; object-src 'none'; style-src 'self' https://unpkg.com/ https://fonts.googleapis.com/ https://fonts.bunny.net/; connect-src 'self'; base-uri 'self'; form-action 'self'">
-        <link href="https://fonts.bunny.net" rel="preconnect" crossorigin>
-        <link href="https://fonts.bunny.net" rel="dns-prefetch" crossorigin>
+        <meta http-equiv="Content-Security-Policy" content="font-src 'self' https://unpkg.com/ https://fonts.gstatic.com/ https://cdnjs.cloudflare.com/; img-src 'self' https://*.githubusercontent.com/; object-src 'none'; style-src 'self' https://unpkg.com/ https://fonts.googleapis.com/; connect-src 'self'; base-uri 'self'; form-action 'self'">
         <meta charset="utf-8">
         <title>{{ page_title }}</title>
         <meta name="author" content="{{ site.author }}">
@@ -51,7 +49,12 @@
         <meta name="no-email-collection" content="https://www.unspam.com/noemailcollection">
         <meta name="theme-color" content="#24292e">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link href="https://fonts.bunny.net/css?family=open-sans:400,600,700&display=swap" rel="stylesheet preload" as="font" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-600italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="assets/fonts/open-sans-v40-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link href="https://unpkg.com/@primer/css@20.8.0/dist/primer.css" rel="stylesheet preload" as="style" integrity="sha384-3jGm5B2I1j9UOIKZBLhKrrhqc3d2C0lbu3GJ3LrWoQxzXG8moi1FZnNeUilT/Qsd" crossorigin="anonymous">
         <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
         <link href="/favicon.ico" rel="icon" type="image/x-icon">
