@@ -50,7 +50,7 @@ social_media:
   # youtube: your_username
 
 skills:
-  languages:
+  Languages:
     - C++
     - C++11
     - C++14
@@ -58,37 +58,49 @@ skills:
     - Java
     - Python
     - C
-    - HTML5
-    - CSS3
     - XML
     - JSON
+    - HTML5
+    - CSS3
     - JavaScript
     - PHP
     - SQL
     - UML
 
-  frameworks & tools:
+  Frameworks & Tools:
+    - GCC
+    - Clang
+    - MSVC
+    - CMake
+    - Qt
     - Git
     - GitHub
     - Bitbucket
-    - Qt
-    - Qt Creator
-    - Visual Studio
-    - VSCode
-    - Android Studio
-    - IntelliJ Idea
-    - CLion
-    - PyCharm
-    - PHPStorm
-    - CMake
+    - Docker
     - AppVeyor
-    - VirtualBox
-    - Photoshop
+    - Clang-Tidy
+    - PVS-Studio
+    - Cppcheck
+    
+  IDEs:
+    - CLion
+    - Visual Studio
+    - Qt Creator
+    - IntelliJ Idea
+    - PyCharm
+    - Android Studio
 
-  platforms:
+  Platforms:
     - Windows
     - Linux
     - Android
+    
+  other:
+    - MQTT
+    - SQLite
+    - VirtualBox
+    - IDA Pro
+    - Ghidra
 
 education:
   - type: Master's Degree
