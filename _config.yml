@@ -39,7 +39,7 @@ projects:
 social_media:
   # email: "&#97;&#100;&#109;&#105;&#110;&#64;&#114;&#105;&#107;&#121;&#111;&#122;&#46;&#100;&#101;&#118;"
   linkedin: ostaniriccardo
-  twitter: rikyoz92
+  bluesky: rikyoz.bsky.social
   # facebook: your_username
   # hackerrank: your_username
   # instagram: your_username
@@ -95,7 +95,7 @@ skills:
     - Linux
     - Android
     
-  other:
+  Other:
     - MQTT
     - SQLite
     - VirtualBox
